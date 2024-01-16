@@ -66,7 +66,6 @@ function makeTable(data) {
 
     var currentRow = jsonData[j];
     if (currentRow["tag"] == "Driver") {
-      newRow.append($("<td >").text("-"))
       newRow.append($("<td >").text(currentRow["content"]))
       newRow.append($("<td >").text("-"))
       newRow.append($("<td >").text("-"))
@@ -77,11 +76,10 @@ function makeTable(data) {
     }
     else {  
       metaData = currentRow["content"]["json_metadata"]
-      newRow.append($("<td >").text(metaData["driver_name"]))
       newRow.append($("<td >").text(currentRow["content"]["convers_content"].replace(/<[^>]+>/g, '')))
       newRow.append($("<td >").text(metaData["analysis"])) 
-      newRow.append($("<td >").text(metaData["Artists"].join(', '))) 
       newRow.append($("<td >").text(metaData["driver_cooperation"])) 
+      newRow.append($("<td >").text(metaData["Artists"].join(', '))) 
       newRow.append($("<td >").text(metaData["Entertainment_genres"].join(', '))) 
       newRow.append($("<td >").text(metaData["favorite_food"].join(', '))) 
       newRow.append($("<td >").text(metaData["is_additional_passenger"])) 
@@ -132,4 +130,4 @@ $("#search-button").click(function () {
   fetchData(currentUrl);
 });
 
-// var intervalId = setInterval(refreshData, 5000);
+var intervalId = setInterval(refreshData, 5000);
