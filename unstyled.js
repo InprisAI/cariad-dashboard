@@ -74,6 +74,7 @@ function makeTable(data) {
       newRow.append($("<td >").text("-"))
       newRow.append($("<td >").text("-"))
       newRow.append($("<td >").text("-"))
+      newRow.append($("<td >").text(" "))
     }
     else {  
       metaData = currentRow["content"]["json_metadata"]
@@ -85,6 +86,7 @@ function makeTable(data) {
       newRow.append($("<td >").text(metaData["Artists"].join(', '))) 
       newRow.append($("<td >").text(metaData["favorite_food"].join(', '))) 
       newRow.append($("<td >").text(metaData["is_additional_passenger"])) 
+      newRow.append($("<td >").text(" "))
     }
   
     $("#dashboard-table tbody").append(newRow);
