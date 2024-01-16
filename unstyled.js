@@ -79,8 +79,8 @@ function makeTable(data) {
       newRow.append($("<td >").text(currentRow["content"]["convers_content"].replace(/<[^>]+>/g, '')))
       newRow.append($("<td >").text(metaData["analysis"])) 
       newRow.append($("<td >").text(metaData["driver_cooperation"])) 
-      newRow.append($("<td >").text(metaData["Artists"].join(', '))) 
       newRow.append($("<td >").text(metaData["Entertainment_genres"].join(', '))) 
+      newRow.append($("<td >").text(metaData["Artists"].join(', '))) 
       newRow.append($("<td >").text(metaData["favorite_food"].join(', '))) 
       newRow.append($("<td >").text(metaData["is_additional_passenger"])) 
     }
