@@ -1,0 +1,136 @@
+
+body {
+  /* font-family: 'Roboto', Arial, sans-serif; */
+  font-family: "Roboto", Helvetica;
+  margin: 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+}
+
+.clickable-serach {
+  /* color: blue; */
+  cursor: 'pointer';
+} 
+
+h1 {
+  /* background-color: #000000; */
+  color: #000000;
+  margin-bottom: 45px;
+  letter-spacing: 0.14px;
+  font-size: 38px;
+  font-family: "Jura", Helvetica;
+  font-weight: 300;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9rem;
+  border-radius:10px;
+}
+
+thead {
+  background-color: #000000;
+  vertical-align: baseline;
+  border-radius:10px;
+}
+
+td {
+  color: grey;
+    font-family: "Roboto", Helvetica;
+    font-size: large;
+    font-style: normal;
+    font-weight: 400;
+  /* border: 1px solid #ddd;*/
+  padding: 12px;
+  text-align: left;
+  word-wrap: break-word;
+
+  /* max-width: 300px; */
+}
+
+th {
+  background-color: #000000;
+  color: white;
+  font-weight: 700;
+  font-size: large;
+  line-height: 36px;
+  font-family: "Roboto", Helvetica;
+}
+
+tr{
+  border-radius:10px;
+  padding-right: 2px;
+}
+
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.rounded-table {
+  border-radius: 7px; /* Adjust the value to control the roundness */
+  overflow: hidden; /* Ensures content within the table doesn't overflow the rounded corners */
+}
+
+/* Adjust the search container styles */
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 10px; */
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+
+#search-input{
+  border-radius: 28px;
+  width: 30%; 
+}
+
+/* Style the left and right divs */
+.left {
+  flex: 1; /*Take up available space on the left */
+  text-align: left; /* Align the input to the left */
+  line-height: 15px;
+}
+/* 
+.right {
+  text-align: right; 
+}
+
+ Style the buttons if needed 
+.right button {
+  margin-left: 7px; 
+  border-radius: 33px;
+} */
+
+
+input, button {
+  padding: 7px 20px;
+  margin: 0 1px;
+  box-sizing: border-box;
+  border: 1px solid;
+  border-radius: 6px;
+}
+
+
+input {
+  flex-grow: 1;
+}
+
+button {
+  background-color: #4a4f6a;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 33px;
+}
+
+button:hover {
+  background-color: #3f4560;
+}
